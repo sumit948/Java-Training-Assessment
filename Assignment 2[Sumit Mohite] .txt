@@ -1,0 +1,71 @@
+Q1. What is JDBC Driver? Please explain in detail.
+->  - JDBC Is nothing but Java Database Connectivity (JDBC) is an application programming interface (API) for the programming language Java,which defines how a 
+      client may access any kind of tabular data,especially relational database.
+	- It acts as a middle layer interface between java applications and database.
+	- JDBC classes are contained in the Java Package java.sql and javax.sql.
+	- There are 4 types of JDBC drivers:
+		-- driver or JDBC-ODBC bridge driver:- Its uses ODBC driver to connect to the database.
+		-- driver or Native-API driver:- it uses the clientside libraries of the database.This driver converts JDBC method calls into native calls of the database API.
+		-- driver or Network Protocol driver:-here all the database connectivity drivers are present in a single server,hence no need of individual client-side installation.
+		-- driver or Thin driver:-This driver interact directly with database. It does not require any native database library.
+	
+Q2. What are the JDBC API components?
+->  There are JDBC API Components
+	- DriverManager
+	- Driver
+	- Connection
+	- Statement
+	- ResultSet
+	- SQLException
+	
+Q3. What are the differences between Statement and PreparedStatement interface?
+-> Statement :- 
+		1.It is used when SQL query is to be executed only once.
+		2.Performance is very low.
+		3.It is base interface.
+		4.It is used for DDL statements.
+		5.Used for CREATE, ALTER, DROP statements.
+   
+   PreparedStatement:-
+		1.It is used when SQL query is to be executed multiple times.
+		2.Performance is better than Statement.
+		3.It extends statement interface.
+		4.It is used for any SQL Query.
+		5.Used for the queries which are to be executed multiple times.
+					  
+Q4. What is the major difference between java.util.Date and java.sql.Date data type?
+-> 	java.sql.Date - Its just represent DATE without time information.
+	java.util.Date - Its justrepresents both Date and Time information.This is the major difference why java.util.Date can not directly map to java.sql.Date.
+
+Q5. What do you understand by Reflection in Java programming language?
+-> 	Reflection in java is an API which is used to examine or modify the behavior of methods,classes,interfaces at runtime.The required classes for reflection 
+    are provided under java.lang.reflect package.Reflection gives us information about the class to which an object belongs and also the methods of that class 
+	which can be executed by using the object.Through reflection we can invoke methods at runtime irrespective of the access specifier used with them.
+
+Q6. What is Gang of Four (GOF)?
+->  Gang Of Four (GOF) refers to the authors of the book: Design Patterns: Elements of Reusable Object-Oriented Software
+
+Q7. What is Factory pattern and Abstract factory pattern?
+->  In Factory pattern, we create object without exposing the creation logic to the client and refer to newly created object using a common interface.
+    Abstract Factory patterns work around a super-factory which creates other factories. Abstract factory pattern implementation provides us with a 
+	framework that allows us to create objects that follow a general pattern.So at runtime, the abstract factory is coupled with any desired concrete
+	factory which can create objects of the desired type.
+
+Q8. What is Singleton pattern? How can you create Singleton class in java?
+->  In object-oriented programming, a singleton class is a class that can have only one object (an instance of the class) at a time. 
+    After first time, if we try to instantiate the Singleton class, the new variable also points to the first instance created.Remember the key points 
+	while defining class as singleton class that is while designing a singleton class:
+	 - Make constructor private.
+	 - Write a static method that has return type object of this singleton class. Here, the concept of Lazy initialization is used to write this static method.
+
+Q9. What is a version control system (VCS) and what is git repository?
+->  Version control, also known as source control, is the practice of tracking and managing changes to software code. Version control 
+    systems are software tools that help software teams manage changes to source code over time.
+    Repositories in GIT contain a collection of files of various different versions of a Project. These files are imported from the 
+	repository into the local server of the user for further updations and modifications in the content of the file. 	
+
+Q10. Can you explain head in terms of git and also tell the number of heads that can be 
+present in a repository?
+-> HEAD points to the starting point of the present branch in the repository at all times.It can be thought of as the last state or the last checked 
+   out point in a repository. If we are viewing the master branch, then “master” is also our HEAD. If we are not viewing the master branch, then whatever
+   branch or commit we are viewing is our HEAD.

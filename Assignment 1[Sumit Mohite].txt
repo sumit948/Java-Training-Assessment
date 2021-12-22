@@ -1,0 +1,139 @@
+1. Which of the following option leads to the portability and security of Java?
+    A. Bytecode is executed by JVM
+    B. The applet makes the Java code secure and portable
+    C. Use of exception handling
+    D. Dynamic binding between objects
+    Ans- A
+
+2. Which of the following is not a Java features?
+    A. Dynamic
+    B. Architecture Neutral
+    C. Use of pointers
+    D. Object-oriented
+    Ans- C
+
+3. Which is a valid keyword in java?
+    A. interface
+    B. string
+    C. Float
+    D. Unsigned
+    Ans-A    
+
+4. What is the default value of double variable?
+    A. 0.0d
+    B. 0.0f
+    C. 0
+    D. not defined
+    Ans- A 
+ 
+5. What kind of variables a class can consist of?
+    A. class variable, instance variable
+    B. class variable, local variable, instance variable
+    C. class variable
+    D. class variables, local variables
+    Ans- B
+ 
+6. What is the default value of Object variable?
+    A. undefined
+    B. 0
+    C. null     
+    D. not defined
+    Ans- C
+ 
+7. What is the size of float variable?
+    A. 8 bit
+    B. 16 bit
+    C. 32 bit
+    D. 64 bit 
+    Ans- C
+ 
+8. Method Overloading is an example of?
+    A. Static Binding
+    B. Dynamic Binding;
+    C. Both of the above
+    D. None of the above
+    Ans- B
+ 
+9. What will happen if static modifier is removed from the signature of the main method?
+    A. Compilation Error
+    B. RunTimeError: NoSuchMethodError
+    C. Program will compile and run without any output
+    D. Programm will compile and run to show the required output
+    Ans- B
+ 
+10. What is Serialization?
+    A. Serialization is the process of writing the state of an object to another object
+    B. Serialization is the process of writing the state of an object to a byte stream
+    C. Both of the above
+    D. None of the above
+    Ans- B 
+ 
+11. What is a class in Java?
+    A. A class is a blue print from which individual objects are created. A class can contain fields and methods to describe the behavior of an object.
+    B. class is a spacial data type
+    C. class is used to allocate memory to a data type
+    D. None of the above
+    Ans- A
+ 
+12. Method Overriding
+    A. Volatile variable
+    B. Mutable variable
+    C. Immutable variable
+    D. Dynamic variable
+    Ans- B    
+
+13. What is Abstraction?
+    A. Abstraction is a technique to define different methods of same type.
+    B. Abstraction is the ability of an object to take on many forms.
+    C. It refers to the ability to make a class abstraction in OOP
+    D. None of the above
+    Ans-D
+ 
+14. Which three are valid declarations of a char??
+    A. char c1 = 'face';
+    B. char c2 = 0xbeef;
+    C. char c3 = \u0022;
+    D. char c4 = '\iface';Netscape
+    Ans- A,C,D
+
+15. Which built-in method combines the text of two strings and returns a new string?
+    A. append()
+    B. concat()
+    C. attach()
+    D. None of the above.
+    Ans- B
+ 
+16. Which is the valid declarations within an interface definition?
+    A.     public double methoda();
+    B.     public final double methoda();
+    C.     static void methoda(double d1);
+    D.     protected void methoda(double d1);
+    Ans- A
+ 
+17. Which of the following is an IF statement in Java?
+    A. if i = 5
+    B. if i = 5 then
+    C. if (i == 5)
+    D. All of these
+    Ans- C
+ 
+18. Which of the following is not a reserved word in Java?
+    A. interface
+    B. throws
+    C. program
+    D. short
+    Ans-C
+
+19. Who invented Java language?
+    A. Dennis Ritchie
+    B. James Gosling
+    C. Larry Page
+    D. Serge Page
+    Ans- B
+ 
+20. What is the original name of Java Programming language?
+    A. J++
+    B. C++
+    C. Oak
+    D. Teak
+    Ans-C
