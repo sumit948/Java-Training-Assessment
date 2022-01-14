@@ -2,7 +2,6 @@ package com.example.studteccourse.Assessmentsixstudentteachcourse.entitys;
 
 import java.io.Serializable;
 import java.util.Objects;
-import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -28,10 +27,10 @@ public class Student implements Serializable {
 	private String studName;
 	
 	@OneToOne(cascade = CascadeType.ALL)
-	private Set<Course> course;
+	private Course course;
 	
 	@OneToOne(cascade = CascadeType.ALL)
-	private Set<Teacher> tech;
+	private Teacher tech;
 
 	public String getStudId() {
 		return studId;
@@ -49,19 +48,19 @@ public class Student implements Serializable {
 		this.studName = studName;
 	}
 
-	public Set<Course> getCourse() {
+	public Course getCourse() {
 		return course;
 	}
 
-	public void setCourse(Set<Course> course) {
+	public void setCourse(Course course) {
 		this.course = course;
 	}
 
-	public Set<Teacher> getTech() {
+	public Teacher getTech() {
 		return tech;
 	}
 
-	public void setTech(Set<Teacher> tech) {
+	public void setTech(Teacher tech) {
 		this.tech = tech;
 	}
 

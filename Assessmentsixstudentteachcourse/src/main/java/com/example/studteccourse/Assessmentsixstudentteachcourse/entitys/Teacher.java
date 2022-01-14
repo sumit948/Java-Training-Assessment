@@ -2,15 +2,12 @@ package com.example.studteccourse.Assessmentsixstudentteachcourse.entitys;
 
 import java.io.Serializable;
 import java.util.Objects;
-import java.util.Set;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 
 @Entity
 public class Teacher implements Serializable  {
@@ -22,9 +19,6 @@ public class Teacher implements Serializable  {
 	
 	@Column
 	private String techName;
-	
-	@OneToMany(cascade = CascadeType.ALL)
-	private Set<Student> stud;
 
 	public String getTechId() {
 		return techId;
@@ -42,21 +36,13 @@ public class Teacher implements Serializable  {
 		this.techName = techName;
 	}
 
-	public Set<Student> getStud() {
-		return stud;
-	}
-
-	public void setStud(Set<Student> stud) {
-		this.stud = stud;
-	}
-
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(stud, techId, techName);
+		return Objects.hash(techId, techName);
 	}
 
 	@Override
@@ -68,14 +54,18 @@ public class Teacher implements Serializable  {
 		if (getClass() != obj.getClass())
 			return false;
 		Teacher other = (Teacher) obj;
-		return Objects.equals(stud, other.stud) && Objects.equals(techId, other.techId)
-				&& Objects.equals(techName, other.techName);
+		return Objects.equals(techId, other.techId) && Objects.equals(techName, other.techName);
 	}
 
 	@Override
 	public String toString() {
-		return "Teacher [techId=" + techId + ", techName=" + techName + ", stud=" + stud + "]";
+		return "Teacher [techId=" + techId + ", techName=" + techName + "]";
 	}
+	
+//	@OneToMany(cascade = CascadeType.ALL)
+//	private Set<Student> stud;
+
+	
 	
 	
 }

@@ -17,6 +17,7 @@ import com.example.studteccourse.Assessmentsixstudentteachcourse.entitys.Student
 import com.example.studteccourse.Assessmentsixstudentteachcourse.repository.StudentRepository;
 
 @RestController
+@RequestMapping("/student")
 public class MyController {
 	@Autowired
 	private StudentRepository studRepo;
